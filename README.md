@@ -1,5 +1,7 @@
 
-# londonmapbot
+# esmapbot 🤖🗺️🇪🇦
+
+⚠️WORK IN PROGRESS⚠️
 
 [![Project Status: Concept – Minimal or no implementation has been done
 yet, or the repository is only intended to be a limited example, demo,
