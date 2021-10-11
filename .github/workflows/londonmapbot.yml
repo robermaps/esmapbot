@@ -1,11 +1,11 @@
-name: londonmapbot
+name: esmapbot
 
 on:
   schedule:
     - cron: '42 0/2 * * *'  # once every two hours
 
 jobs:
-  londonmapbot-post:
+  esmapbot-post:
     runs-on: macOS-latest
     env:
       TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
@@ -19,4 +19,4 @@ jobs:
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Create and post tweet
-        run: Rscript londonmapbot-tweet.R
+        run: Rscript esmapbot-tweet.R
