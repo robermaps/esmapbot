@@ -10,7 +10,8 @@ esmapbot_token <- rtweet::create_token(
 # Generate random coordinates within specific limits
 lon <- round(runif(1, -9.29, 4.32), 4)
 lon <- format(lon, scientific = FALSE)
-lat <- round(runif(1, 43.79, 36), 4)
+lat <- round(runif(1, 43.79, 36.00), 4)
+lat <- format(lat, scientific = FALSE)
 
 # Build URL and fetch image from Mapbox API
 img_url <- paste0(
