@@ -10,7 +10,7 @@ proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https:
 
 🤖📍🇪🇦
 
-Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot). que postea imágenes aéreas aleatorias de España junto a sus cordenadas. Hace uso de de [{rtweet}](https://docs.ropensci.org/rtweet/), [MapBox](https://www.mapbox.com/) y [GitHub Actions](https://docs.github.com/en/actions). 
+Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea imágenes aéreas aleatorias de España junto a sus cordenadas. Hace uso de de [{rtweet}](https://docs.ropensci.org/rtweet/), [MapBox](https://www.mapbox.com/) y [GitHub Actions](https://docs.github.com/en/actions). 
 
 Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es un fork de su [repositorio oficial](https://github.com/matt-dray/londonmapbot) de GitHub adaptado por [RoberJ](https://www.twitter.com/progra_mapa). 
 
