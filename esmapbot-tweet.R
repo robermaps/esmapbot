@@ -1,6 +1,6 @@
 # Create Twitter token
-londonmapbot_token <- rtweet::create_token(
-  app = "londonmapbot",
+esmapbot_token <- rtweet::create_token(
+  app = "esmapbot",
   consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
   consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
   access_token =    Sys.getenv("TWITTER_ACCESS_TOKEN"),
@@ -8,9 +8,9 @@ londonmapbot_token <- rtweet::create_token(
 )
 
 # Generate random coordinates within specific limits
-lon <- round(runif(1, -0.489, 0.236), 4)
+lon <- round(runif(1, -9.29, 4.32), 4)
 lon <- format(lon, scientific = FALSE)
-lat <- round(runif(1, 51.28, 51.686), 4)
+lat <- round(runif(1, 43.79, 36), 4)
 
 # Build URL and fetch image from Mapbox API
 img_url <- paste0(
@@ -34,5 +34,5 @@ latlon_details <- paste0(
 rtweet::post_tweet(
   status = latlon_details,
   media = temp_file,
-  token = londonmapbot_token
+  token = esmapbot_token
 )
