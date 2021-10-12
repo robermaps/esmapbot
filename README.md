@@ -1,5 +1,3 @@
-⚠️ PRÓXIMAMENTE ⚠️
-
 # Mapbot de España 
 
 [![Project Status: Concept – Minimal or no implementation has been done
