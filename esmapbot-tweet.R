@@ -11,12 +11,14 @@ esmapbot_token <- rtweet::create_token(
 lon <- round(runif(1, -9.29, 4.32), 4)
 lat <- round(runif(1, 36.00, 43.79), 4)
 
+zoom <- sample(8:18, 1)
+
 
 # Build URL and fetch image from Mapbox API
 img_url <- paste0(
   "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/",
-  paste0(lon, ",", lat),
-  ",15,0/600x400@2x?access_token=",
+  paste0(lon, ",", lat, zoom),
+  ",0/600x400@2x?access_token=",
   Sys.getenv("MAPBOX_PUBLIC_ACCESS_TOKEN")
 )
 
