@@ -12,11 +12,15 @@ Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) 
 
 Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot) hecha por RoberJ ([@progra_mapa](https://www.twitter.com/progra_mapa)). 
 
-Hace uso de de [{rtweet}](https://docs.ropensci.org/rtweet/), [MapBox](https://www.mapbox.com/) y [GitHub Actions](https://docs.github.com/en/actions). 
+## Librerías 
+
+* [{rtweet}](https://docs.ropensci.org/rtweet/)
+* [MapBox Static Images API](https://docs.mapbox.com/api/maps/static-images/)
+* [GitHub Actions](https://docs.github.com/en/actions) 
 
 
 ## Nuevas características
-A continuación está la lista con las modificaciones realizadas al código de su [repositorio original](https://github.com/matt-dray/londonmapbot):
+Modificaciones realizadas al código del [repositorio original](https://github.com/matt-dray/londonmapbot):
 
 * Se ha añadido aleatoriedad en el nivel de zoom con el que se realizan las peticiones de imágenes
 
