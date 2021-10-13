@@ -9,7 +9,7 @@ esmapbot_token <- rtweet::create_token(
 
 # Load boundaries
 
-spain <- geojsonR::FROM_GeoJson(url_file_string = "https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson")
+spain <- geojsonR::FROM_GeoJson(url_file_string = "https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson", To_List = FALSE)
 
 # Random coordinates
 
