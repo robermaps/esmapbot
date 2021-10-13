@@ -1,4 +1,4 @@
-# Create Twitter token
+# Twitter token
 esmapbot_token <- rtweet::create_token(
   app = "esmapbot",
   consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
@@ -7,14 +7,15 @@ esmapbot_token <- rtweet::create_token(
   access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
 
-# Generate random coordinates within specific limits
+# Random coordinates
 lon <- round(runif(1, -9.29, 4.32), 4)
 lat <- round(runif(1, 36.00, 43.79), 4)
 
+# Random zoom level
 zoom <- sample(8:18, 1)
 
 
-# Build URL and fetch image from Mapbox API
+# Mapbox API petition
 img_url <- paste0(
   "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/",
   paste0(lon, ",", lat, ",", zoom),
@@ -22,17 +23,17 @@ img_url <- paste0(
   Sys.getenv("MAPBOX_PUBLIC_ACCESS_TOKEN")
 )
 
-# Download the image to a temporary location
+# Download the image as temp file
 temp_file <- tempfile()
 download.file(img_url, temp_file)
 
-# Build the status message (text and URL)
+# Twitter message
 latlon_details <- paste0(
   "📍 ",lat, ", ", lon, "\n",
   "🗺️ ","https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"
 )
 
-# Post the image to Twitter
+# Send tweet
 rtweet::post_tweet(
   status = latlon_details,
   media = temp_file,
