@@ -18,5 +18,7 @@ jobs:
       - uses: r-lib/actions/setup-r@master
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
+      - name: Install geojson package
+        run: Rscript -e 'install.packages("geojsonio", dependencies = TRUE)' 
       - name: Create and post tweet
         run: Rscript esmapbot-tweet.R
