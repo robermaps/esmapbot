@@ -18,8 +18,8 @@ jobs:
       - uses: r-lib/actions/setup-r@master
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
-      - name: Install geojson package
-        run: Rscript -e 'install.packages("geojsonio", dependencies = TRUE)' 
+      - name: Install geojsonR package
+        run: Rscript -e 'install.packages("geojsonR", dependencies = TRUE)' 
       - name: Install sf package
         run: Rscript -e 'install.packages("sf", dependencies = TRUE)'
       - name: Create and post tweet
