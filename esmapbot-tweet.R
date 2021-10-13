@@ -7,9 +7,21 @@ esmapbot_token <- rtweet::create_token(
   access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
 
+# Load boundaries
+
+spain <- geojson_read("https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson",  what = "sp")
+
 # Random coordinates
+
 lon <- round(runif(1, -9.29, 4.32), 4)
 lat <- round(runif(1, 36.00, 43.79), 4)
+
+point <- points(lon,lat)
+
+while(st_contains(point,spain) == FALSE) {
+  lon <- round(runif(1, -9.29, 4.32), 4)
+  lat <- round(runif(1, 36.00, 43.79), 4)
+}
 
 # Random zoom level
 zoom <- sample(8:18, 1)
