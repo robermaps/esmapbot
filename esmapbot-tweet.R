@@ -38,7 +38,7 @@ download.file(img_url, temp_file)
 
 # Twitter message
 latlon_details <- paste0(
-  "📍 ",lat, ", ", lon, "\n",
+  "📍 ",lon, ", ", lat, "\n",
   "🗺️ ","https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"
 )
 
