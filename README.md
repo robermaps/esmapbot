@@ -23,7 +23,7 @@ Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot
 ## Nuevas características
 Modificaciones respecto al código del [repositorio original](https://github.com/matt-dray/londonmapbot):
 
-* Las coordenadas se obtienen a partir de un punto generado aleatoriamente dentro de las fronteras terrestres de España
+* Las coordenadas se obtienen a partir de un punto generado aleatoriamente dentro de una capa geojson con las fronteras terrestres de España
 * Se ha añadido aleatoriedad en el nivel de zoom con el que se realizan las peticiones de imágenes
 
 
