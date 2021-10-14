@@ -11,7 +11,7 @@ esmapbot_token <- rtweet::create_token(
 
 #spain <- geojsonR::FROM_GeoJson(url_file_string = "https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson", To_List = FALSE)
 
-spain <- sf::st_read("spain.geojson") 
+spain <- sf::st_read("https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson") 
 
 feature <- spain[1,]
 
