@@ -2,7 +2,7 @@ name: esmapbot
 
 on:
   schedule:
-    - cron: '00 * * * *'  # once every two hours
+    - cron: '00 * * * *' 
 
 jobs:
   esmapbot-post:
@@ -20,8 +20,6 @@ jobs:
         run: Rscript -e 'options(install.packages.check.source = "no")'
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
-      - name: Install geojsonR package
-        run: Rscript -e 'install.packages("geojsonR", dependencies = TRUE)' 
       - name: Install sf package
         run: Rscript -e 'install.packages("sf", dependencies = TRUE)'
       - name: Create and post tweet
