@@ -9,7 +9,11 @@ esmapbot_token <- rtweet::create_token(
 
 # Load boundaries
 
-spain <- geojsonR::FROM_GeoJson(url_file_string = "https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson", To_List = FALSE)
+#spain <- geojsonR::FROM_GeoJson(url_file_string = "https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson", To_List = FALSE)
+
+spain <- sf::st_read("spain.geojson") 
+
+feature <- spain[1,]
 
 # Random coordinates
 
@@ -18,7 +22,7 @@ lat <- round(runif(1, 36.00, 43.79), 4)
 
 point <- sf::st_point(c(lon, lat))
 
-while(sf::st_contains(point,spain$geometry) == FALSE) {
+while(sf::st_contains(point,feature) == FALSE) {
   lon <- round(runif(1, -9.29, 4.32), 4)
   lat <- round(runif(1, 36.00, 43.79), 4)
 }
