@@ -1,5 +1,3 @@
-
-
 # Twitter token
 esmapbot_token <- rtweet::create_token(
   app = "esmapbot",
@@ -19,23 +17,9 @@ point <- sf::st_sample(spain, 1)
 
 coord <- sf::st_coordinates(point)
 
-lon <- coord[1]
-lat <- coord[2]
+lon <- round(coord[1],4)
+lat <- round(coord[2],4)
 
-
-# Random coordinates
-
-#lon <- round(runif(1, -9.29, 4.32), 4)
-#lat <- round(runif(1, 36.00, 43.79), 4)
-
-#point <- sf::st_point(c(lon, lat))
-
-#check <- sf::st_contains(point,feature)
-
-#while(!check) {
-#  lon <- round(runif(1, -9.29, 4.32), 4)
-#  lat <- round(runif(1, 36.00, 43.79), 4)
-#}
 
 # Random zoom level
 zoom <- sample(8:18, 1)
