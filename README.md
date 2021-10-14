@@ -15,6 +15,7 @@ Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot
 ## Librerías 
 
 * [{rtweet}](https://docs.ropensci.org/rtweet/)
+* [Simple Features for R](https://github.com/r-spatial/sf/)
 * [MapBox Static Images API](https://docs.mapbox.com/api/maps/static-images/)
 * [GitHub Actions](https://docs.github.com/en/actions) 
 
