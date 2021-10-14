@@ -1,3 +1,5 @@
+
+
 # Twitter token
 esmapbot_token <- rtweet::create_token(
   app = "esmapbot",
@@ -9,25 +11,31 @@ esmapbot_token <- rtweet::create_token(
 
 # Load boundaries
 
-#spain <- geojsonR::FROM_GeoJson(url_file_string = "https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson", To_List = FALSE)
+spain <- sf::st_read("https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson")
 
-spain <- sf::st_read("https://raw.githubusercontent.com/PrograMapa/esmapbot/master/spain.geojson") 
+# Random coordinates 
 
-feature <- spain[1,]
+point <- sf::st_sample(spain, 1)
+
+coord <- sf::st_coordinates(point)
+
+lon <- coord[1]
+lat <- coord[2]
+
 
 # Random coordinates
 
-lon <- round(runif(1, -9.29, 4.32), 4)
-lat <- round(runif(1, 36.00, 43.79), 4)
+#lon <- round(runif(1, -9.29, 4.32), 4)
+#lat <- round(runif(1, 36.00, 43.79), 4)
 
-point <- sf::st_point(c(lon, lat))
+#point <- sf::st_point(c(lon, lat))
 
-check <- sf::st_contains(point,feature)
+#check <- sf::st_contains(point,feature)
 
-while(!check) {
-  lon <- round(runif(1, -9.29, 4.32), 4)
-  lat <- round(runif(1, 36.00, 43.79), 4)
-}
+#while(!check) {
+#  lon <- round(runif(1, -9.29, 4.32), 4)
+#  lat <- round(runif(1, 36.00, 43.79), 4)
+#}
 
 # Random zoom level
 zoom <- sample(8:18, 1)
