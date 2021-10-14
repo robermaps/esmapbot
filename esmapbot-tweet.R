@@ -22,7 +22,9 @@ lat <- round(runif(1, 36.00, 43.79), 4)
 
 point <- sf::st_point(c(lon, lat))
 
-while(sf::st_contains(point,feature) == FALSE) {
+check <- sf::st_contains(point,feature)
+
+while(!check) {
   lon <- round(runif(1, -9.29, 4.32), 4)
   lat <- round(runif(1, 36.00, 43.79), 4)
 }
