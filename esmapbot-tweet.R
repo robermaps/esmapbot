@@ -21,7 +21,7 @@ lon <- round(coord[1],4)
 lat <- round(coord[2],4)
 
 # Random zoom level
-zoom <- sample(14:18, 1)
+zoom <- sample(14:16, 1)
 
 
 # Mapbox API petition
