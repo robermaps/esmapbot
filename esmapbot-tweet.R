@@ -36,9 +36,15 @@ img_url <- paste0(
 temp_file <- tempfile()
 download.file(img_url, temp_file)
 
+# Geocoding point
+location = paste0("https://api.mymappi.com/v2/geocoding/reverse?apikey=",MYMAPPI_PUBLIC_TOKEN,"&lat=",lat,"&lon=",lon)
+address = jsonlite::fromJSON(location, flatten = TRUE)
+text = address$data$display_name
+
 # Twitter message
 latlon_details <- paste0(
-  "📍 ",lat, ", ", lon, "\n",
+  "🌐",lat, ", ", lon, "\n",
+  "📍", text, "\n",
   "🗺️ ","https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"
 )
 
