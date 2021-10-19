@@ -45,8 +45,9 @@ text = address$data$display_name
 latlon_details <- paste0(
   "📍 ", text, "\n",
   "🌐 ",lat, ", ", lon, "\n",
-  "🗺️ ","https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"
+  "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
 )
+
 
 # Send tweet
 rtweet::post_tweet(
