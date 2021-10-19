@@ -12,7 +12,7 @@ proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https:
 
 
 
-Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea cada cuatro horas una imagen de satélite aleatoria de España junto a sus cordenadas lat/lon WGS 84.
+Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea cada cuatro horas una imagen de satélite aleatoria de España junto a sus cordenadas lat/lon WGS 84, su dirección y un enlace al lugar en OpenStreetMap.
 
 Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot) hecha por RoberJ ([@progra_mapa](https://www.twitter.com/progra_mapa)). 
 
@@ -21,6 +21,7 @@ Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot
 * [{rtweet}](https://docs.ropensci.org/rtweet/)
 * [Simple Features for R](https://github.com/r-spatial/sf/)
 * [MapBox Static Images API](https://docs.mapbox.com/api/maps/static-images/)
+* [mymappi Geocoding API](https://mymappi.com/es/geocoding/)
 * [GitHub Actions](https://docs.github.com/en/actions) 
 
 
@@ -29,6 +30,7 @@ Modificaciones respecto al código del [repositorio original](https://github.com
 
 * Las coordenadas se obtienen a partir de un punto generado aleatoriamente dentro de una capa geojson con las fronteras terrestres de España
 * Se ha añadido aleatoriedad en el nivel de zoom con el que se realizan las peticiones de imágenes
+* Ahora también comparte la dirección del lugar mediante la geocodificación inversa de las coordenadas 
 
 
 
