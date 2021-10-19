@@ -12,7 +12,7 @@ proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https:
 
 
 
-Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea cada cuatro horas una imagen de satélite aleatoria de España junto a sus cordenadas lat/lon WGS 84, su dirección y un enlace al lugar en OpenStreetMap.
+Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea cada cuatro horas una imagen de satélite aleatoria de España junto a sus cordenadas lat/lon WGS 84 🌐, su dirección 📍 y un enlace al lugar en OpenStreetMap 🗺.
 
 Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot) hecha por RoberJ ([@progra_mapa](https://www.twitter.com/progra_mapa)). 
 
