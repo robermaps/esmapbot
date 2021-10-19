@@ -2,11 +2,9 @@
 
 <img src="@esmapbot.png" width="400" height="200" text-align: center></div>
 
-[![Project Status: Concept – Minimal or no implementation has been done
-yet, or the repository is only intended to be a limited example, demo,
-or
-proof-of-concept.](https://www.repostatus.org/badges/latest/concept.svg)](https://www.repostatus.org/#concept)
-[![](https://img.shields.io/badge/Twitter-@esmapbot-white?style=flat&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
+[![](https://img.shields.io/badge/@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
+[![](https://img.shields.io/badge/Wordpress-white?style=for-the-badge&labelColor=grey&logo=wordpress&logoColor=white)](https://programapa.wordpress.com/2021/10/15/mapbot-esp/)
+
 
 ### 🤖🛰️🇪🇦
 
