@@ -43,7 +43,7 @@ text = address$data$display_name
 
 # Twitter message
 latlon_details <- paste0(
-  "📍 ", text, "\n",
+  "📍", text, "\n",
   "🌐 ",lat, ", ", lon, "\n",
   "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
 )
