@@ -10,7 +10,7 @@
 
 
 
-Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea cada cuatro horas una imagen de satélite aleatoria de España junto a sus coordenadas lat/lon WGS 84 🌐, su dirección 📍 y un enlace al lugar en OpenStreetMap 🗺.
+Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea cada cuatro horas una imagen de satélite aleatoria de España junto a sus coordenadas lat/lon WGS 84 🌐, su dirección 📍 y un enlace al lugar en Google Maps 🗺.
 
 Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot) hecha por RoberJ ([@progra_mapa](https://www.twitter.com/progra_mapa)). 
 
@@ -29,6 +29,7 @@ Modificaciones respecto al código del [repositorio original](https://github.com
 * Las coordenadas se obtienen a partir de un punto generado aleatoriamente dentro de una capa geojson con las fronteras terrestres de España
 * Se ha añadido aleatoriedad en el nivel de zoom con el que se realizan las peticiones de imágenes
 * Ahora también comparte la dirección del lugar mediante la geocodificación inversa de las coordenadas 
+* El enlace ahora te lleva al lugar en Google Maps en vez de a OpenStreetMap
 
 
 
