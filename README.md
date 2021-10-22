@@ -30,7 +30,7 @@ Modificaciones respecto al código del [repositorio original](https://github.com
 * Se ha añadido aleatoriedad en el nivel de zoom con el que se realizan las peticiones de imágenes
 * Ahora también comparte la dirección del lugar mediante la geocodificación inversa de las coordenadas 
 * El enlace ahora te lleva al lugar en Google Maps en vez de a OpenStreetMap
-* Se ha aumentado la resolución de las imágenes a 1024 x 576 píxeles 
+* Se ha aumentado la resolución de las imágenes a 640 x 960 píxeles, adaptándolas así al formato vertical de los teléfonos móviles
 
 
 
