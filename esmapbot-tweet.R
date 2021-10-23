@@ -42,16 +42,21 @@ address = jsonlite::fromJSON(location, flatten = TRUE)
 text = address$data$display_name
 
 # Twitter message
-latlon_details <- paste0(
+if (text == '') { message <- paste0(
+  "📍 ¿Adivinas? \n",
+  "🌐 ",lat, ", ", lon, "\n",
+  "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
+)} else { message <- paste0(
   "📍 ", text, "\n",
   "🌐 ",lat, ", ", lon, "\n",
   "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
-)
+)}
+
 
 
 # Send tweet
 rtweet::post_tweet(
-  status = latlon_details,
+  status = message,
   media = temp_file,
   token = esmapbot_token
 )
