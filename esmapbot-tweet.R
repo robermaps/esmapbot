@@ -42,7 +42,7 @@ address = jsonlite::fromJSON(location, flatten = TRUE)
 text = address$data$display_name
 
 # Twitter message
-if (text == '') { message <- paste0(
+if (is.null(text)) { message <- paste0(
   "📍 ¿Adivinas? \n",
   "🌐 ",lat, ", ", lon, "\n",
   "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
