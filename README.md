@@ -28,7 +28,7 @@ Modificaciones respecto al código del [repositorio original](https://github.com
 
 * Las coordenadas se obtienen a partir de un punto generado aleatoriamente dentro de una capa geojson con las fronteras terrestres de España
 * Se ha añadido aleatoriedad en el nivel de zoom con el que se realizan las peticiones de imágenes
-* Ahora también comparte la dirección del lugar mediante la geocodificación inversa de las coordenadas 
+* Ahora también comparte la dirección del lugar mediante la geocodificación inversa de las coordenadas. Se devuelve el mensaje "¿Adivinas?" en caso de que la API devuelva valor nulo
 * El enlace ahora te lleva al lugar en Google Maps en vez de a OpenStreetMap
 * Se ha aumentado la resolución de las imágenes a 640 x 960 píxeles, adaptándolas así al formato vertical de los teléfonos móviles
 
