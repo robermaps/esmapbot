@@ -28,7 +28,7 @@ zoom <- sample(14:16, 1)
 img_url <- paste0(
   "https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/",
   paste0(lon, ",", lat, ",", zoom),
-  ",0/640x960@2x?access_token=",
+  ",0/600x900@2x?access_token=",
   Sys.getenv("MAPBOX_PUBLIC_ACCESS_TOKEN")
 )
 
