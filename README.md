@@ -54,13 +54,13 @@ Based on [@mattdray](https://twitter.com/mattdray)'s work with his [@londonmapbo
 
 
 ## New features
-Changes from source coude at [original repo](https://github.com/matt-dray/londonmapbot):
+Changes from source code at [original repo](https://github.com/matt-dray/londonmapbot):
 
-* Coordinates are now taken from a randomly generated point inside Spain's terrestrial boundary limits stored in a geojson file.
-* Zoom level randomness was added to image petitions
+* Coordinates are now taken from randomly generated points inside Spain's terrestrial boundary limits stored in a geojson file.
+* Zoom level randomness was added to image requests
 * Inverse geocoding of coordinates to get adresses. A predefined message substitute null values returned from the API.
 * The location link now redirects to Google Maps instead of OpenStreetMap
-* Resolution has been changed to 600 x 900 for a better mobile experience 
+* Image size request has been changed to 600 x 900 for a better mobile experience 
 
 
 
