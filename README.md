@@ -40,9 +40,9 @@ ________________________________________________________________
 
 
 
-Source code of Twitter bot [@esmapbot](https://www.twitter.com/esmapbot) which posts every four hours a random satellite image of Spain accompanied by its coordinates lat/lon WGS 84 🌐, its address 📍 and a link to that location in Google Maps 🗺.
+Source code of Twitter bot [@esmapbot](https://www.twitter.com/esmapbot) which posts every four hours a random satellite image of Spain accompanied by its lat/lon WGS 84 coordinates 🌐, its address 📍 and a link to that location in Google Maps 🗺.
 
-Based on [@mattdray](https://twitter.com/mattdray)'s work with his [@londonmapbot](https://twitter.com/londonmapbot) by RoberJ ([@progra_mapa](https://www.twitter.com/progra_mapa)). 
+By RoberJ ([@progra_mapa](https://www.twitter.com/progra_mapa)) based on [@mattdray](https://twitter.com/mattdray)'s work with his [@londonmapbot](https://twitter.com/londonmapbot).
 
 ## Libraries
 
