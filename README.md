@@ -11,6 +11,16 @@ Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) 
 
 Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot) hecha por RoberJ ([@progra_mapa](https://www.twitter.com/progra_mapa)). 
 
+Originalmente, las coordenadas se generaban aleatoriamente entre los rangos delimitados por una bounding box de Londres. Aplicar este método a España daba lugar a que muchas veces las imágenes correspondieran al mar, a Francia o a Portugal, y al incorporar las islas resultaba aún más problemático.
+
+En su lugar, este bot obtiene las coordenadas a partir de un punto generado aleatoriamente dentro de un polígono almacenado en un archivo geojson con las fronteras de España, para lo cual el paquete sf de R ha sido fundamental.
+
+Para darle una vuelta de tuerca, he añadido dos nuevas funcionalidades. La primera es muy simple: añadir aleatoriedad al nivel de zoom con el que se obtienen las imágenes para que haya más variedad aún si cabe a la de la geografía española.
+
+La segunda ha consistido en usar un servicio de geocoding (yo he usado mymappi porque es el más sencillo y barato que he encontrado en castellano) para transformar las coordenadas de ese punto generado aleatoriamente en una dirección legible (he estado tentado de usar la API de what3words…)
+
+Por último, he cambiado el servicio de cartografía al que enlaza el bot para ver en un mapa el contexto geográfico de la imagen. Originalmente se compartía un enlace que te llevaba al lugar en OpenStreetMap, pero decidí cambiarlo a Google Maps porque desgraciadamente en OSM no hay vista de satélite. 
+
 ## Librerías 
 
 * [{rtweet}](https://docs.ropensci.org/rtweet/)
@@ -30,13 +40,15 @@ Modificaciones respecto al código del [repositorio original](https://github.com
 * Se ha modificado la resolución de las imágenes a 600 x 900 píxeles, adaptándolas así al formato vertical de los teléfonos móviles
 
 
-## Follow me!
+## Sígueme!
 [![](https://img.shields.io/badge/@progra_mapa-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/progra_mapa)[![](https://img.shields.io/badge/PrograMapa-grey?style=for-the-badge&logo=wordpress)](https://programapa.wordpress.com)[![](https://img.shields.io/badge/Roberto-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/robertojl)[![](https://img.shields.io/badge/@progra_mapa-white?style=for-the-badge&logo=instagram)](https://instagram.com/progra_mapa)
 
 _________________________________________________________________________________________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________________________
 
 # Spain from Sky
+
+<img src="@esmapbot.png" width="400" height="200" text-align: center></div>
 
 [![](https://img.shields.io/badge/SIgue_a_@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
 [![](https://img.shields.io/badge/leer_en_Wordpress-white?style=for-the-badge&labelColor=grey&logo=wordpress&logoColor=white)](https://programapa.wordpress.com/2021/10/15/mapbot-esp/)
