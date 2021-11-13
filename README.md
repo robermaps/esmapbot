@@ -3,7 +3,6 @@
 <img src="@esmapbot.png" width="400" height="200" text-align: center></div>
 
 [![](https://img.shields.io/badge/SIgue_a_@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
-[![](https://img.shields.io/badge/leer_en_Wordpress-white?style=for-the-badge&labelColor=grey&logo=wordpress&logoColor=white)](https://programapa.wordpress.com/2021/10/15/mapbot-esp/)
 
 ### 🤖🛰️🇪🇦
 
@@ -50,8 +49,7 @@ ________________________________________________________________________________
 
 <img src="@esmapbot.png" width="400" height="200" text-align: center></div>
 
-[![](https://img.shields.io/badge/SIgue_a_@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
-[![](https://img.shields.io/badge/leer_en_Wordpress-white?style=for-the-badge&labelColor=grey&logo=wordpress&logoColor=white)](https://programapa.wordpress.com/2021/10/15/mapbot-esp/)
+[![](https://img.shields.io/badge/follow_@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
 
 Source code of Twitter bot [@esmapbot](https://www.twitter.com/esmapbot) which posts every six hours a random satellite image of Spain accompanied by its lat/lon WGS 84 coordinates 🌐, its address 📍 and a link to that location in Google Maps 🗺.
 
