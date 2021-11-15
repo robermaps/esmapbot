@@ -22,7 +22,7 @@ jobs:
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Install sf package
-        run: Rscript -e 'install.packages("sf", dependencies = TRUE)'
+        run: Rscript -e 'install.packages("sf", dependencies = FALSE)'
       - name: Install jsonlite
         run: Rscript -e 'install.packages("jsonlite", dependencies = TRUE)'
       - name: Create and post tweet
