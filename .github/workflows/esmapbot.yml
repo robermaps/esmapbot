@@ -21,8 +21,13 @@ jobs:
         run: Rscript -e 'options(install.packages.check.source = "no")'
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
+      - name: Install gdal
+        run: |
+          brew install proj
+          brew install geos
+          brew install gdal
       - name: Install sf package
-        run: Rscript -e 'install.packages("sf", dependencies = FALSE)'
+        run: Rscript -e 'install.packages("sf", dependencies = TRUE)'
       - name: Install jsonlite
         run: Rscript -e 'install.packages("jsonlite", dependencies = TRUE)'
       - name: Create and post tweet
