@@ -8,7 +8,7 @@
 
 Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea cada seis horas una imagen de satélite aleatoria de España junto a sus coordenadas lat/lon WGS 84 🌐, su dirección 📍 y un enlace al lugar en Google Maps 🗺.
 
-Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot) hecha por RoberJ ([@programapa_](https://www.twitter.com/programapa_)). 
+Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot) hecha por Rober J ([@roberer_](https://www.twitter.com/roberer_)). 
 
 Inicialmente, las coordenadas se generaban aleatoriamente entre los rangos delimitados por una bounding box de Londres. Aplicar este método a España daba lugar a que muchas veces las imágenes correspondieran al mar, a Francia o a Portugal, y al incorporar las islas resultaba aún más problemático.
 
@@ -53,7 +53,7 @@ ________________________________________________________________________________
 
 Source code of Twitter bot [@esmapbot](https://www.twitter.com/esmapbot) which posts every six hours a random satellite image of Spain accompanied by its lat/lon WGS 84 coordinates 🌐, its address 📍 and a link to that location in Google Maps 🗺.
 
-By RoberJ ([@programapa_](https://www.twitter.com/programapa_)) based on [@mattdray](https://twitter.com/mattdray)'s work with his [@londonmapbot](https://twitter.com/londonmapbot).
+By Rober J ([@roberer_](https://www.twitter.com/roberer_)) based on [@mattdray](https://twitter.com/mattdray)'s work with his [@londonmapbot](https://twitter.com/londonmapbot).
 
 ## Libraries
 
