@@ -1,6 +1,6 @@
 # España desde el cielo
 
-<img src="@esmapbot.png" width="400" height="200" text-align: center></div>
+<img src="https://i.imgur.com/5rLmtA3.png" width="400" height="200" text-align: center></div>
 
 [![](https://img.shields.io/badge/SIgue_a_@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
 
