@@ -21,6 +21,8 @@ jobs:
         run: Rscript -e 'options(install.packages.check.source = "no")'
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
+      - name: Install utils package
+        run: Rscript -e 'install.packages("R.utils", dependencies = TRUE)'  
       - name: Install gdal
         run: |
           brew install proj
