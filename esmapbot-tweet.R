@@ -38,7 +38,7 @@ download.file(img_url, temp_file)
 
 # Geocoding point
 location = paste0("https://api.mymappi.com/v2/geocoding/reverse?apikey=",Sys.getenv("MYMAPPI_PUBLIC_TOKEN"),paste0("&lat=",lat,"&lon=",lon))
-loc_encoded = URLencode(location, reserved = FALSE, repeated = FALSE)
+loc_encoded = Rutils::URLencode(location, reserved = FALSE, repeated = FALSE)
 address = jsonlite::fromJSON(loc_encoded, flatten = TRUE)
 text = address$data$display_name
 
