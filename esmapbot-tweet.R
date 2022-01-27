@@ -37,21 +37,27 @@ temp_file <- tempfile()
 download.file(img_url, temp_file)
 
 # Geocoding point
-location = paste0("https://api.mymappi.com/v2/geocoding/reverse?apikey=",Sys.getenv("MYMAPPI_PUBLIC_TOKEN"),paste0("&lat=",lat,"&lon=",lon))
-loc_encoded = utils::URLencode(location, reserved = FALSE, repeated = FALSE)
-address = jsonlite::fromJSON(loc_encoded, flatten = TRUE)
-text = address$data$display_name
+# location = paste0("https://api.mymappi.com/v2/geocoding/reverse?apikey=",Sys.getenv("MYMAPPI_PUBLIC_TOKEN"),paste0("&lat=",lat,"&lon=",lon))
+# loc_encoded = utils::URLencode(location, reserved = FALSE, repeated = FALSE)
+# address = jsonlite::fromJSON(loc_encoded, flatten = TRUE)
+# text = address$data$display_name
 
 # Twitter message
-if (is.null(text)) { message <- paste0(
-  "📍 ¿Adivinas? \n",
-  "🌐 ",lat, ", ", lon, "\n",
-  "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
-)} else { message <- paste0(
+# if (is.null(text)) { message <- paste0(
+#  "📍 ¿Adivinas? \n",
+#  "🌐 ",lat, ", ", lon, "\n",
+#  "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
+# )} else { message <- paste0(
+#  "📍 ", text, "\n",
+#  "🌐 ",lat, ", ", lon, "\n",
+#  "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
+# )}
+
+message <- paste0(
   "📍 ", text, "\n",
   "🌐 ",lat, ", ", lon, "\n",
   "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
-)}
+)
 
 
 
