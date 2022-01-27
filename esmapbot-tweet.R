@@ -54,7 +54,7 @@ download.file(img_url, temp_file)
 # )}
 
 message <- paste0(
-  "📍 ", text, "\n",
+  "📍 ¿Adivinas?, "\n",
   "🌐 ",lat, ", ", lon, "\n",
   "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
 )
