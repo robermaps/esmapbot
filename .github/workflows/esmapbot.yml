@@ -2,7 +2,7 @@ name: esmapbot
 
 on:
   schedule:
-    - cron: '00 0/6 * * *' 
+    - cron: '00 0/12 * * *' 
 
 jobs:
   esmapbot-post:
