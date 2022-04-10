@@ -2,7 +2,7 @@ name: esmapbot
 
 on:
   #workflow_dispatch:
-  #schedule:
+  schedule:
    - cron: '00 0/24 * * *' 
 
 jobs:
