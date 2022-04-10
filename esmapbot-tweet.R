@@ -42,7 +42,7 @@ download.file(img_url, temp_file)
 # location = paste0("https://api.mymappi.com/v2/geocoding/reverse?apikey=",Sys.getenv("MYMAPPI_PUBLIC_TOKEN"),paste0("&lat=",lat,"&lon=",lon))
 # loc_encoded = utils::URLencode(location, reserved = FALSE, repeated = FALSE)
 # address = jsonlite::fromJSON(loc_encoded, flatten = TRUE)
-# text = address$data$display_name
+# text = features$0$place_name
 
 # Twitter message
 # if (is.null(text)) { message <- paste0(
