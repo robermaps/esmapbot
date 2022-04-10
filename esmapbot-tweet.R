@@ -36,13 +36,12 @@ img_url <- paste0(
 temp_file <- tempfile()
 download.file(img_url, temp_file)
 
-# https://api.mapbox.com/geocoding/v5/mapbox.places/-3.505671943603886,40.487640351046196.json?types=place&limit=1&access_token=YOUR_MAPBOX_ACCESS_TOKEN
 
 # Geocoding point
-# location = paste0("https://api.mymappi.com/v2/geocoding/reverse?apikey=",Sys.getenv("MYMAPPI_PUBLIC_TOKEN"),paste0("&lat=",lat,"&lon=",lon))
-# loc_encoded = utils::URLencode(location, reserved = FALSE, repeated = FALSE)
-# address = jsonlite::fromJSON(loc_encoded, flatten = TRUE)
-# text = features$0$place_name
+location = paste0("https://api.mapbox.com/geocoding/v5/mapbox.places/",paste0(lon, ",", lat),".json?types=place&limit=1&access_token=",Sys.getenv("MAPBOX_PUBLIC_ACCESS_TOKEN"))
+loc_encoded = utils::URLencode(location, reserved = FALSE, repeated = FALSE)
+address = jsonlite::fromJSON(loc_encoded, flatten = TRUE)
+text = features$0$place_name
 
 # Twitter message
 # if (is.null(text)) { message <- paste0(
@@ -56,7 +55,7 @@ download.file(img_url, temp_file)
 # )}
 
 message <- paste0(
-  "🌐 ",lat, ", ", lon, "\n",
+  "📍 ", text, "\n",
   "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
 )
 
