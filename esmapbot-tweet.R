@@ -41,7 +41,7 @@ download.file(img_url, temp_file)
 location = paste0("https://api.mapbox.com/geocoding/v5/mapbox.places/",paste0(lon, ",", lat),".json?types=place&limit=1&access_token=",Sys.getenv("MAPBOX_PUBLIC_ACCESS_TOKEN"))
 loc_encoded = utils::URLencode(location, reserved = FALSE, repeated = FALSE)
 address = jsonlite::fromJSON(loc_encoded, flatten = TRUE)
-text = addres$features$"0"$place_name
+text = address$features$"0"$place_name
 
 # Twitter message
 # if (is.null(text)) { message <- paste0(
