@@ -36,6 +36,8 @@ img_url <- paste0(
 temp_file <- tempfile()
 download.file(img_url, temp_file)
 
+# https://api.mapbox.com/geocoding/v5/mapbox.places/-3.505671943603886,40.487640351046196.json?types=place&limit=1&access_token=YOUR_MAPBOX_ACCESS_TOKEN
+
 # Geocoding point
 # location = paste0("https://api.mymappi.com/v2/geocoding/reverse?apikey=",Sys.getenv("MYMAPPI_PUBLIC_TOKEN"),paste0("&lat=",lat,"&lon=",lon))
 # loc_encoded = utils::URLencode(location, reserved = FALSE, repeated = FALSE)
