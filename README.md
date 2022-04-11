@@ -8,7 +8,7 @@
 
 Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea diariamente una imagen de satélite aleatoria de España junto a su municipio y provincia 📍 y un enlace al lugar en Google Maps 🗺.
 
-Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot) hecha por Rober J ([@roberer_](https://www.twitter.com/roberer_)). 
+Construido originalmente por [@mattdray](https://twitter.com/mattdray), este bot es una adaptación de su [@londonmapbot](https://twitter.com/londonmapbot)
 
 Inicialmente, las coordenadas se generaban aleatoriamente entre los rangos delimitados por una bounding box de Londres. Aplicar este método a España daba lugar a que muchas veces las imágenes correspondieran al mar, a Francia o a Portugal, y al incorporar las islas resultaba aún más problemático.
 
