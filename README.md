@@ -4,6 +4,10 @@
 
 [![](https://img.shields.io/badge/SIgue_a_@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
 
+Por Rober J
+
+[![](https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=github)](https://roberer.github.io)[![](https://img.shields.io/badge/Portfolio?style=for-the-badge&logo=github)](https://roberer.github.io)[![](https://img.shields.io/badge/@roberer_-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/roberer_)[![](https://img.shields.io/badge/Roberto-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/robertojl)
+
 ### 🤖
 
 Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea diariamente una imagen de satélite aleatoria de España junto a su municipio y provincia 📍 y un enlace al lugar en Google Maps 🗺.
@@ -28,5 +32,3 @@ Tanto las imágenes como las direcciones provienen de MapBox.
 * [GitHub Actions](https://docs.github.com/en/actions) 
 
 
-## Sígueme!
-[![](https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=github)](https://roberer.github.io)[![](https://img.shields.io/badge/@roberer_-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/roberer_)[![](https://img.shields.io/badge/Roberto-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/robertojl)
