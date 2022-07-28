@@ -1,5 +1,5 @@
 # Twitter token
-esmapbot_token <- rtweet::create_token(
+esmapbot_token <- rtweet::rtweet_bot(
   app = "esmapbot",
   consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
   consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
@@ -33,7 +33,7 @@ img_url <- paste0(
 )
 
 # Download the image as temp file
-temp_file <- tempfile()
+temp_file <- tempfile(fileext = ".jpeg")
 download.file(img_url, temp_file)
 
 
