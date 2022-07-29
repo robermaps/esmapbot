@@ -59,11 +59,12 @@ message <- paste0(
   "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
 )
 
-
+alt_text <- paste0("Imagen satélite de ", text)
 
 # Send tweet
 rtweet::post_tweet(
   status = message,
   media = temp_file,
+  media_alt_text = alt_text,
   token = esmapbot_token
 )
