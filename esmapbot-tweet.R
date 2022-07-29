@@ -1,8 +1,7 @@
 # Twitter token
 esmapbot_token <- rtweet::rtweet_bot(
-  app = "esmapbot",
-  consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
-  consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
+  api_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
+  api_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
   access_token =    Sys.getenv("TWITTER_ACCESS_TOKEN"),
   access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
@@ -59,7 +58,7 @@ message <- paste0(
   "🗺️ ","https://www.google.es/maps/@", lat, ",", lon, ",16z"
 )
 
-alt_text <- paste0("Imagen satélite de ", text)
+alt_text <- paste0("Imagen de satélite de ", text)
 
 # Send tweet
 rtweet::post_tweet(
