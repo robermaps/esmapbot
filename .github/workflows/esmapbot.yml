@@ -24,6 +24,12 @@ jobs:
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Install utils package
         run: Rscript -e 'install.packages("utils", dependencies = TRUE)'  
+      - name: Install sf libraries on macOS
+        if: runner.os == 'macOS'
+        run: | 
+          brew install proj
+          brew install geos
+          brew install gdal
       - name: Install sf package
         run: Rscript -e 'install.packages("sf", dependencies = TRUE)'
       - name: Install jsonlite
