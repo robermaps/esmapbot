@@ -3,7 +3,7 @@ name: esmapbot
 on:
   #workflow_dispatch:
   schedule:
-   - cron: '00 1/1 * * *' 
+   - cron: '00 0/24 * * *' 
 
 jobs:
   esmapbot-post:
