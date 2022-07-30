@@ -25,7 +25,7 @@ jobs:
       - name: Install utils package
         run: Rscript -e 'install.packages("utils", dependencies = TRUE)'  
       - name: Install sf package
-        run: Rscript -e 'install.packages("sf", dependencies = FALSE)'
+        run: Rscript -e 'install.packages("sf", dependencies = TRUE)'
       - name: Install jsonlite
         run: Rscript -e 'install.packages("jsonlite", dependencies = TRUE)'
       - name: Create and post tweet
