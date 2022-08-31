@@ -1,14 +1,12 @@
 # España desde el cielo 🛰️🇪🇦
 
-<img src="https://lh3.googleusercontent.com/pw/AL9nZEXUrX-RrToPCteiP3KvTK07Wlum98fiLJyK1ERasGjLcEbngV4jcq-374gwkmCuyS28FJ1_M2U6O9JibL_kCNoz69zx5QJxNnJqYSWnYowjk6R2GYO9z9HKGdfJkBz0aJG8O5moOjYJS1SCP6XrYi5_=w737-h415-no?authuser=1" width="400" height="200" text-align: center></div>
-
 [![](https://img.shields.io/badge/SIgue_a_@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
 
 Por Rober J
 
 [![](https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=github)](https://roberer.github.io)[![](https://img.shields.io/badge/Portfolio?style=for-the-badge&logo=github)](https://roberer.github.io)[![](https://img.shields.io/badge/@roberer_-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/roberer_)[![](https://img.shields.io/badge/Roberto-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/robertojl)
 
-### 🤖
+<img src="https://lh3.googleusercontent.com/pw/AL9nZEXUrX-RrToPCteiP3KvTK07Wlum98fiLJyK1ERasGjLcEbngV4jcq-374gwkmCuyS28FJ1_M2U6O9JibL_kCNoz69zx5QJxNnJqYSWnYowjk6R2GYO9z9HKGdfJkBz0aJG8O5moOjYJS1SCP6XrYi5_=w737-h415-no?authuser=1" width="60%" height="60%" text-align: center></div>
 
 Código fuente del bot de Twitter [@esmapbot](https://www.twitter.com/esmapbot) que postea diariamente una imagen de satélite aleatoria de España junto a su municipio y provincia 📍 y un enlace al lugar en Google Maps 🗺.
 
