@@ -1,6 +1,6 @@
 # España desde el cielo 🛰️🇪🇦
 
-<img src="https://i.imgur.com/OiC71jl.png" width="400" height="200" text-align: center></div>
+<img src="https://lh3.googleusercontent.com/pw/AL9nZEXUrX-RrToPCteiP3KvTK07Wlum98fiLJyK1ERasGjLcEbngV4jcq-374gwkmCuyS28FJ1_M2U6O9JibL_kCNoz69zx5QJxNnJqYSWnYowjk6R2GYO9z9HKGdfJkBz0aJG8O5moOjYJS1SCP6XrYi5_=w737-h415-no?authuser=1" width="400" height="200" text-align: center></div>
 
 [![](https://img.shields.io/badge/SIgue_a_@esmapbot-white?style=for-the-badge&labelColor=blue&logo=Twitter&logoColor=white)](https://twitter.com/esmapbot)
 
