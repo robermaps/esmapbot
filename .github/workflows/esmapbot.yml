@@ -17,7 +17,7 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@master
+      - uses: r-lib/actions/setup-r@v4.0
       - name: dont check source
         run: Rscript -e 'options(install.packages.check.source = "no")'
       - name: Install rtweet package
