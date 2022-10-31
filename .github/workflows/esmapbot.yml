@@ -28,7 +28,7 @@ jobs:
       - name: dont check source
         run: Rscript -e 'options(install.packages.check.source = "no")'
       - name: Install rtweet package
-        run: Rscript -e 'install.packages("rtweet", dependencies = FALSE)'
+        run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Install utils package
         run: Rscript -e 'install.packages("utils", dependencies = TRUE)'  
       - name: Install sf libraries on macOS
@@ -40,6 +40,6 @@ jobs:
       - name: Install sf package
         run: Rscript -e 'install.packages("sf", dependencies = FALSE)'
       - name: Install jsonlite
-        run: Rscript -e 'install.packages("jsonlite", dependencies = TRUE)'
+        run: Rscript -e 'install.packages("jsonlite", dependencies = FALSE)'
       - name: Create and post tweet
         run: Rscript esmapbot-tweet.R
