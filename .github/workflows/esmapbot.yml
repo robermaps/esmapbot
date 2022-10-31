@@ -25,8 +25,8 @@ jobs:
         with: 
           r-version: '4.0'
         
-      - name: dont check source
-        run: Rscript -e 'options(install.packages.check.source = "no")'
+     # - name: dont check source
+      #  run: Rscript -e 'options(install.packages.check.source = "no")'
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Install utils package
@@ -38,7 +38,7 @@ jobs:
           brew install geos
           brew install gdal
       - name: Install sf package
-        run: Rscript -e 'install.packages("sf", dependencies = FALSE)'
+        run: Rscript -e 'install.packages("sf", dependencies = TRUE)'
       - name: Install jsonlite
         run: Rscript -e 'install.packages("jsonlite", dependencies = FALSE)'
       - name: Create and post tweet
